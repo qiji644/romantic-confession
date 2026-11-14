@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 380" role="img" aria-labelledby="title desc">
+  <title id="title">噜噜</title>
+  <desc id="desc">一只圆乎乎的奶油色毛绒小熊，围着蓝灰色围巾，脸颊有红晕</desc>
+  <defs>
+    <radialGradient id="bodyGlow" cx="38%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff9ee"/>
+      <stop offset="55%" stop-color="#f4e9dc"/>
+      <stop offset="100%" stop-color="#e5d3c0"/>
+    </radialGradient>
+    <radialGradient id="tummyGlow" cx="45%" cy="32%" r="70%">
+      <stop offset="0%" stop-color="#fffdf6"/>
+      <stop offset="100%" stop-color="#f0e3d2"/>
+    </radialGradient>
+    <linearGradient id="scarfGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b9d2da"/>
+      <stop offset="100%" stop-color="#8fb1bd"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#667b88" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="180" cy="343" rx="118" ry="18" fill="#8fa8b2" opacity="0.12"/>
+
+  <!-- 雪花点缀 -->
+  <g fill="#cfe3e8" opacity="0.75">
+    <path d="M52 70l3.5 6-3.5 6-3.5-6z"/><path d="M47 76l6 3.5v7l-6-3.5z" opacity=".55"/>
+    <circle cx="312" cy="86" r="3.5"/><circle cx="328" cy="120" r="2.5" opacity=".7"/>
+    <circle cx="44" cy="176" r="2.6" opacity=".65"/>
+    <path d="M286 196l2.8 4.8-2.8 4.8-2.8-4.8z" opacity=".6"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <!-- 耳朵 -->
+    <circle cx="105" cy="106" r="52" fill="url(#bodyGlow)"/>
+    <circle cx="255" cy="106" r="52" fill="url(#bodyGlow)"/>
+    <circle cx="105" cy="112" r="27" fill="#e8c6b0" opacity="0.8"/>
+    <circle cx="255" cy="112" r="27" fill="#e8c6b0" opacity="0.8"/>
+
+    <!-- 手臂 -->
+    <ellipse cx="58" cy="252" rx="38" ry="62" transform="rotate(22 58 252)" fill="url(#bodyGlow)"/>
+    <ellipse cx="302" cy="252" rx="38" ry="62" transform="rotate(-22 302 252)" fill="url(#bodyGlow)"/>
+
+    <!-- 身体 -->
+    <ellipse cx="180" cy="245" rx="132" ry="126" fill="url(#bodyGlow)"/>
+
+    <!-- 肚子 -->
+    <ellipse cx="180" cy="278" rx="82" ry="72" fill="url(#tummyGlow)"/>
+
+    <!-- 围巾 -->
+    <path d="M97 188c0-22 37-38 83-38s83 16 83 38l-12 44c-4 12-18 16-30 16h-82c-12 0-26-4-30-16z" fill="url(#scarfGrad)"/>
+    <path d="M254 202c10 6 30 18 30 38 0 12-8 20-18 18-12-2-20-13-18-26z" fill="#9dbdc7"/>
+    <path d="M97 202l26 6 8 34-22 6z" fill="#a6c3cc" opacity="0.9"/>
+
+    <!-- 眼睛 -->
+    <circle cx="130" cy="205" r="11" fill="#485b63"/>
+    <circle cx="230" cy="205" r="11" fill="#485b63"/>
+    <circle cx="126" cy="201" r="3.4" fill="#ffffff"/>
+    <circle cx="226" cy="201" r="3.4" fill="#ffffff"/>
+
+    <!-- 鼻子 -->
+    <path d="M180 226c-8 0-13 5-13 11 0 8 10 10 13 10s13-2 13-10c0-6-5-11-13-11z" fill="#b4774d"/>
+    <path d="M180 238v10M180 248c-2 2-4 2-6 0M180 248c2 2 4 2 6 0" stroke="#9a603f" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+    <!-- 脸颊 -->
+    <ellipse cx="103" cy="242" rx="17" ry="10" fill="#efb7a4" opacity="0.7"/>
+    <ellipse cx="257" cy="242" rx="17" ry="10" fill="#efb7a4" opacity="0.7"/>
+  </g>
+
+  <!-- 身体缝线 -->
+  <path d="M180 96c-54 0-88 42-88 82 0 54 38 84 88 84s88-30 88-84c0-40-34-82-88-82z" fill="none" stroke="#d8bfa5" stroke-width="2.2" stroke-dasharray="2 9" stroke-linecap="round" opacity="0.9"/>
+</svg>
